@@ -1,0 +1,61 @@
+item: ('Advertising Marketing & Public Relations', 'Education') , 0.150
+item: ('Consultancy and Advisory Services', 'Accounts & Records') , 0.160
+item: ('Staff Administration', 'Consultancy and Advisory Services') , 0.160
+item: ('Consultancy and Advisory Services', 'Advertising Marketing & Public Relations', 'Staff Administration') , 0.160
+item: ('Consultancy and Advisory Services', 'Staff Administration', 'Accounts & Records') , 0.160
+item: ('Consultancy and Advisory Services', 'Advertising Marketing & Public Relations', 'Accounts & Records') , 0.160
+item: ('Advertising Marketing & Public Relations', 'Staff Administration', 'Consultancy and Advisory Services', 'Accounts & Records') , 0.160
+item: ('Health Administration and Services',) , 0.170
+item: ('Health Administration and Services', 'Accounts & Records') , 0.170
+item: ('Staff Administration', 'Health Administration and Services') , 0.170
+item: ('Staff Administration', 'Health Administration and Services', 'Accounts & Records') , 0.170
+item: ('Consultancy and Advisory Services',) , 0.180
+item: ('Consultancy and Advisory Services', 'Advertising Marketing & Public Relations') , 0.180
+item: ('Crime Prevention and Prosecution of Offenders',) , 0.190
+item: ('Education',) , 0.230
+item: ('Staff Administration', 'Advertising Marketing & Public Relations', 'Accounts & Records') , 0.590
+item: ('Staff Administration', 'Advertising Marketing & Public Relations') , 0.610
+item: ('Advertising Marketing & Public Relations', 'Accounts & Records') , 0.610
+item: ('Advertising Marketing & Public Relations',) , 0.690
+item: ('Staff Administration', 'Accounts & Records') , 0.730
+item: ('Accounts & Records',) , 0.770
+item: ('Staff Administration',) , 0.770
+
+------------------------ RULES:
+Rule: ('Education',) ==> ('Advertising Marketing & Public Relations',) , 0.652
+Rule: ('Staff Administration',) ==> ('Advertising Marketing & Public Relations', 'Accounts & Records') , 0.766
+Rule: ('Accounts & Records',) ==> ('Staff Administration', 'Advertising Marketing & Public Relations') , 0.766
+Rule: ('Staff Administration',) ==> ('Advertising Marketing & Public Relations',) , 0.792
+Rule: ('Accounts & Records',) ==> ('Advertising Marketing & Public Relations',) , 0.792
+Rule: ('Staff Administration', 'Accounts & Records') ==> ('Advertising Marketing & Public Relations',) , 0.808
+Rule: ('Advertising Marketing & Public Relations',) ==> ('Staff Administration', 'Accounts & Records') , 0.855
+Rule: ('Advertising Marketing & Public Relations',) ==> ('Staff Administration',) , 0.884
+Rule: ('Advertising Marketing & Public Relations',) ==> ('Accounts & Records',) , 0.884
+Rule: ('Consultancy and Advisory Services',) ==> ('Accounts & Records',) , 0.889
+Rule: ('Consultancy and Advisory Services',) ==> ('Staff Administration',) , 0.889
+Rule: ('Consultancy and Advisory Services',) ==> ('Advertising Marketing & Public Relations', 'Staff Administration') , 0.889
+Rule: ('Consultancy and Advisory Services', 'Advertising Marketing & Public Relations') ==> ('Staff Administration',) , 0.889
+Rule: ('Consultancy and Advisory Services',) ==> ('Staff Administration', 'Accounts & Records') , 0.889
+Rule: ('Consultancy and Advisory Services',) ==> ('Advertising Marketing & Public Relations', 'Accounts & Records') , 0.889
+Rule: ('Consultancy and Advisory Services', 'Advertising Marketing & Public Relations') ==> ('Accounts & Records',) , 0.889
+Rule: ('Consultancy and Advisory Services',) ==> ('Advertising Marketing & Public Relations', 'Staff Administration', 'Accounts & Records') , 0.889
+Rule: ('Advertising Marketing & Public Relations', 'Consultancy and Advisory Services') ==> ('Staff Administration', 'Accounts & Records') , 0.889
+Rule: ('Staff Administration',) ==> ('Accounts & Records',) , 0.948
+Rule: ('Accounts & Records',) ==> ('Staff Administration',) , 0.948
+Rule: ('Staff Administration', 'Advertising Marketing & Public Relations') ==> ('Accounts & Records',) , 0.967
+Rule: ('Advertising Marketing & Public Relations', 'Accounts & Records') ==> ('Staff Administration',) , 0.967
+Rule: ('Consultancy and Advisory Services',) ==> ('Advertising Marketing & Public Relations',) , 1.000
+Rule: ('Health Administration and Services',) ==> ('Accounts & Records',) , 1.000
+Rule: ('Health Administration and Services',) ==> ('Staff Administration',) , 1.000
+Rule: ('Consultancy and Advisory Services', 'Staff Administration') ==> ('Advertising Marketing & Public Relations',) , 1.000
+Rule: ('Consultancy and Advisory Services', 'Staff Administration') ==> ('Accounts & Records',) , 1.000
+Rule: ('Consultancy and Advisory Services', 'Accounts & Records') ==> ('Staff Administration',) , 1.000
+Rule: ('Consultancy and Advisory Services', 'Accounts & Records') ==> ('Advertising Marketing & Public Relations',) , 1.000
+Rule: ('Health Administration and Services',) ==> ('Staff Administration', 'Accounts & Records') , 1.000
+Rule: ('Staff Administration', 'Health Administration and Services') ==> ('Accounts & Records',) , 1.000
+Rule: ('Health Administration and Services', 'Accounts & Records') ==> ('Staff Administration',) , 1.000
+Rule: ('Staff Administration', 'Consultancy and Advisory Services') ==> ('Advertising Marketing & Public Relations', 'Accounts & Records') , 1.000
+Rule: ('Consultancy and Advisory Services', 'Accounts & Records') ==> ('Advertising Marketing & Public Relations', 'Staff Administration') , 1.000
+Rule: ('Advertising Marketing & Public Relations', 'Staff Administration', 'Consultancy and Advisory Services') ==> ('Accounts & Records',) , 1.000
+Rule: ('Advertising Marketing & Public Relations', 'Consultancy and Advisory Services', 'Accounts & Records') ==> ('Staff Administration',) , 1.000
+Rule: ('Staff Administration', 'Consultancy and Advisory Services', 'Accounts & Records') ==> ('Advertising Marketing & Public Relations',) , 1.000
